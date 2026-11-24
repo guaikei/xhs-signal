@@ -6,6 +6,11 @@ name: xhs-signal
 description: "小红薯公开数据异动信号（只读）：关键词搜笔记、爆款选题、笔记详情、评论舆情、博主作品、粉丝获赞与收藏，输出 JSON，不登录不发布。触发词：小红书、小红薯、xhs、rednote、笔记链接、博主主页、竞品监控、KOL筛选、评论分析。用户要查小红书笔记、评论、选题、竞品或舆情时使用；抖音、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.2.3
+display_name: "小红薯异动信号｜互动突增·爆款笔记·负面评论·数据波动"
+display_name_en: "Xiaohongshu Signal"
+description_zh: "小红薯异动信号：基于小红书公开数据的只读监测接口，支持关键词搜索笔记（类型/排序/时间过滤）、单条笔记详情、博主作品与粉丝获赞收藏、评论抓取（近 N 天过滤），对比同一笔记多次抓取的互动数变化，识别突增爆款、负面评论激增与数据异常波动，输出结构化 JSON（标题、作者、点赞/收藏/评论/分享、链接、发布时间），可导入 Excel/BI 或交给 AI 做选题库、竞品对比、舆情风险提示。按量 Token 单次最多 10000 条；包月 Token 搜索最多 40、作品最多 30、评论最多 20，超限退出码 1（PLAN_LIMIT）。零第三方依赖，Node.js 16.14+ 内置模块直接运行；需配置环境变量 GUAIKEI_API_TOKEN（可通过 www.guaikei.com 开通获取）。不登录、不发布、不点赞、不评论，无封号风险。"
+description_en: "Xiaohongshu (RedNote) public-data anomaly signal skill: keyword search for notes (type/sort/time filters), single-note details, creator post feeds with fan/like/save stats, and comment scraping with a past-N-days filter; compares repeated captures of the same note to surface engagement spikes, rising viral hits, surging negative comments, and abnormal data swings. Outputs structured JSON (title, author, liked/collected/comment/shared counts, links, publish time) ready for Excel/BI or AI-driven topic libraries and reputation alerts. Pay-as-you-go tokens up to 10000 items per run; monthly tokens limited to 40 for search, 30 for creator posts and 20 for comments, exceeding the plan limit exits with code 1 (PLAN_LIMIT). Zero third-party dependencies, runs on Node.js 16.14+ built-ins only; requires the GUAIKEI_API_TOKEN environment variable (available via www.guaikei.com). Read-only and login-free: no posting, liking, or commenting, so no account-ban risk."
+author: "新郑市怪奇信息技术工作室"
 category: 数据分析
 homepage: https://www.guaikei.com
 metadata:
